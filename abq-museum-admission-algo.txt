@@ -1,0 +1,5 @@
+get customer's age
+get membership status
+get NM residency status
+
+if membershipStatus or age <= 3
