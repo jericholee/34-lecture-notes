@@ -10,5 +10,4 @@ const factor = function (number){
     }
     return sum
 }
-
 console.log(factor(12))
