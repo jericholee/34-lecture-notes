@@ -1,11 +1,17 @@
 function handleFetchRequest() {
-	const result =fetch("https://baconipsum.com/api/?type=meat-and-filler")
+	fetch("https://baconipsum.com/api/?type=meat-and-filler")
 		.then(response => {
 			return response.json()
 		}).then(data => {
-				console.log("resolved data", data)
+			let accumulator = ""
+			for(let i = 0; i < data.length; i++) {
+				accumulator = accumulator + `<p>${data[i]}</p>`
+		}
+				console.log(accumulator)
+				document.getElementById("target").innerHTML = accumulator
+
 		}
 	)
-		console.log(result)
+
 
 }
