@@ -35,7 +35,7 @@ $(document).ready(function)(){
 		},
 		sumbitHandler:() => {
 			$('contact').ajaxSubmit({
-				type: 'POST',
+				type: 'POST',git status
 				url: $('#contact').attr('action'),
 				success: (ajaxOutput) => {
 					$("output-area").css('display','')
